@@ -8,8 +8,9 @@ body {
 
     color: white;
     height: 250px;
-    /*background-image: "../images/tlo1.jpg";*/
-    background-color: blue;
+    background-image: url("https://image.freepik.com/darmowe-wektory/gielda-lub-wykres-handlu-forex-w-koncepcji-graficznej_73426-429.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
     border-radius: 25px;
 }
 
