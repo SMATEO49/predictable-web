@@ -6,18 +6,47 @@ body {
 }
 
 .cover {
-
+    margin: 0 auto;
     color: white;
-    height: 250px;
-    background-image: url("https://image.freepik.com/darmowe-wektory/gielda-lub-wykres-handlu-forex-w-koncepcji-graficznej_73426-429.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 150%;
+    height: 270px;
+    width: 480px;
+    background-align: center;
+    background-image: url("https://images.wallpaperscraft.com/image/northern_lights_aurora_starry_sky_134859_3840x2160.jpg");
+    background-size: 100%;
+
+    border-radius: 25px;
+}
+
+.cover-pattern {
+    height: 270px;
+    width: 480px;
+    background: rgba(40,40,90,0.35);
+    border-radius: 25px;
+}
+
+.donation {
+    margin: 0 auto;
+    height:120px;
+    width: 480px;
+    background-image: url('images/obraz.png');
+    background-align: center;
+    background-size: 100% 100%;
+    border-radius: 25px;
+}
+
+.donation-pattern {
+    margin: 0 auto;
+    height:120px;
+    width: 480px;
+    background: rgba(200,200,255,0.35);
+    background-align: center;
+
     border-radius: 25px;
 }
 
 .footer {
-    padding: 20px;
     height: 50px;
+    padding: 20px;
     background-color: #2B2D52;
     color: white;
     text-align: center;
