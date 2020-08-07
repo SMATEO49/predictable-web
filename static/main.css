@@ -13,7 +13,6 @@ body {
     background-align: center;
     background-image: url("https://images.wallpaperscraft.com/image/northern_lights_aurora_starry_sky_134859_3840x2160.jpg");
     background-size: 100%;
-
     border-radius: 25px;
 }
 
@@ -22,6 +21,46 @@ body {
     width: 480px;
     background: rgba(40,40,90,0.35);
     border-radius: 25px;
+}
+
+input[type=email] {
+    width: 125px;
+    height: 24px;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #d3d3b3, #d1d1d1);
+    background: -moz-linear-gradient(top, #d3d3b3, #d1d1d1);
+    background: -o-linear-gradient(top, #d3d3b3, #d1d1d1);
+    background: -ms-linear-gradient(top, #d3d3b3, #d1d1d1);
+    background: linear-gradient(top, #d3d3b3, #d1d1d1);
+
+}
+
+input[type=email]::placeholder {
+    color: black;
+}
+
+input[type=email]:-webkit-input-placeholder {
+    color: black;
+}
+
+input[type=email]:-moz-placeholder {
+    color: black;
+}
+
+input[type=email]:-ms-input-placeholder {
+    color: black;
+}
+
+.enroll {
+    width: 60px;
+    height: 24px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background: rgba(216,214,68,1);
 }
 
 .donation {
@@ -40,7 +79,6 @@ body {
     width: 480px;
     background: rgba(200,200,255,0.35);
     background-align: center;
-
     border-radius: 25px;
 }
 
