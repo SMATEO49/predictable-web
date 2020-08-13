@@ -1,3 +1,20 @@
+@font-face {
+    font-family: Century-Gothic;
+    src: url('../fonts/century-gothic.ttf');
+}
+
+body {
+    font-family: Century-Gothic;
+}
+
+#second-step {
+    display: none;
+}
+
+#third-step {
+    display: none;
+}
+
 body {
     margin: 0px;
     font-family: sans-serif;

@@ -5,13 +5,42 @@
     {% block cover %}
 
     <div class="cover">
-        <div class="cover-pattern">
+        {% block title %}
+            <h1>predictable</h1>
+        {% endblock %}
 
-            <h1>predictables</h1>
+        {% block form %}
+        <div class="form-step" id="first-step">
             <p>Enroll for a newsletter</p>
-            <input type="email" name="email" id="email" placeholder="Your email address"/>
-            <input type="submit" value="Enroll" class="enroll" />
+            <p>Stay aware of crucial moments</p>
+
+            <input type="email" name="email" id="email" />
+            <button onclick="secondStep('email', 'first-step')">
+                Enroll
+            </button>
+
+            <p><a href="/exit">Stop getting notifications</a></p>
         </div>
+
+        <div class="form-step" id="second-step">
+            <button onclick="goToFirstStep('second-step')">
+                Back
+            </button>
+            <p>Confirm your e-mail</p>
+
+            <input type="text" name="code" id="code" />
+            <button onclick="thirdStep('email', 'code', 'second-step')">
+                Confirm
+            </button>
+        </div>
+
+        <div class="form-step" id="third-step">
+            <button onclick="goToFirstStep('third-step')">
+                Back
+            </button>
+            <p>You have been enrolled successfully!</p>
+        </div>
+        {% endblock %}
     </div>
     {% endblock %}
 
