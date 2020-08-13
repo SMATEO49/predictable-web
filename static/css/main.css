@@ -76,6 +76,10 @@ input[type=email]:-ms-input-placeholder {
     background: rgba(216,214,68,1);
 }
 
+.css-s1 tr:nth-child(4n+2) {
+    background: #ddd;
+}
+
 .donation {
     margin: 0 auto;
     height:120px;
