@@ -23,7 +23,7 @@
         </div>
 
         <div class="form-step" id="second-step">
-            <button onclick="goToFirstStep('second-step')">
+            <button onclick="goToFirstStep('second-step')" class="grey-button">
                 Back
             </button>
             <p>Confirm your e-mail</p>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="form-step" id="third-step">
-            <button onclick="goToFirstStep('third-step')">
+            <button onclick="goToFirstStep('third-step')" class="grey-button">
                 Back
             </button>
             <p>You have been enrolled successfully!</p>
@@ -77,11 +77,11 @@
                     <td class="{{currency}}-values table-values" id="{{currency}}-future-{{idx}}">2.0</td>
                 {% endfor %}
                 <td>
-                    <button onclick="showChart('{{currency}}')">View</button>
+                    <button onclick="showChart('{{currency}}')" class="grey-button">View</button>
                 </td>
             </tr>
             <tr>
-                <td colspan="8">
+                <td colspan="9">
                     <canvas id="{{currency}}-chart" class="chart"></canvas>
                 </td>
             </tr>

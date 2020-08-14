@@ -5,6 +5,7 @@
 
 :root {
   --placeholder-color: #373737;
+  --grand-width: 480px;
 }
 
 #second-step {
@@ -25,8 +26,8 @@ body {
 .cover {
     margin: 0 auto;
     color: white;
-    height: 270px;
-    width: 480px;
+    width: var(--grand-width);
+    height: calc(var(--grand-width)/16*9);
     background-align: center;
     background-image: url("https://images.wallpaperscraft.com/image/northern_lights_aurora_starry_sky_134859_3840x2160.jpg");
     background-size: 100%;
@@ -34,8 +35,8 @@ body {
 }
 
 .cover-pattern {
-    height: 270px;
-    width: 480px;
+    width: var(--grand-width);
+    height: calc(var(--grand-width)/16*9);
     background: rgba(40,40,90,0.35);
     border-radius: 25px;
 }
@@ -98,17 +99,25 @@ input[type=email]:-ms-input-placeholder {
 }
 
 table {
+    width: var(--grand-width);
+    border-spacing: 0px 0px;
     margin: 0 auto;
 }
+
+
 
 .css-s1 tr:nth-child(4n+2) {
     background: #ddd;
 }
 
+.css-s1 tr:nth-child(4n) {
+    background: #fafafa;
+}
+
 .donation {
     margin: 0 auto;
-    height: 120px;
-    width: 480px;
+    width: var(--grand-width);
+    height: calc(var(--grand-width)/4);
     background-image: url('../images/obraz.png');
     background-align: center;
     background-size: 100% 100%;
@@ -117,23 +126,31 @@ table {
 
 .donation-pattern {
     margin: 0 auto;
-    height:120px;
-    width: 480px;
+    width: var(--grand-width);
+    height: calc(var(--grand-width)/4);
     background: rgba(200,200,255,0.35);
     background-align: center;
     border-radius: 25px;
 }
 
 .donation-button {
-    height: 60px;
-    width: 180px;
+    height: calc(var(--grand-width)/8);
+    width: calc(var(--grand-width)/8*3);
     background: -webkit-linear-gradient(top, #F6F6E1, #D8CD53);
     background: -moz-linear-gradient(top, #F6F6E1, #D8CD53);
     background: -o-linear-gradient(top, #F6F6E1, #D8CD53);
     background: -ms-linear-gradient(top, #F6F6E1, #D8CD53);
     background: linear-gradient(top, #F6F6E1, #D8CD53);
     border: none;
-    border-radius: 30px;
+    border-radius: calc(var(--grand-width)/16);
+}
+
+.grey-button {
+
+    background: #EFEFEF;
+    border:none;
+    border-radius: 5px;
+
 }
 
 .footer {
