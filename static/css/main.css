@@ -23,6 +23,10 @@ body {
     background-color: white;
 }
 
+.form-step {
+    text-align:center;
+}
+
 .cover {
     margin: 0 auto;
     color: white;
@@ -132,11 +136,16 @@ table {
     background: rgba(200,200,255,0.35);
     background-align: center;
     border-radius: 25px;
+    color: white;
+}
+
+.donation-pattern p {
+    text-align: center;
 }
 
 .donation-button {
-    height: calc(var(--grand-width)/8);
-    width: calc(var(--grand-width)/8*3);
+    height: calc(var(--grand-width)/12);
+    width: calc(var(--grand-width)/4);
     background: -webkit-linear-gradient(top, #F6F6E1, #D8CD53);
     background: -moz-linear-gradient(top, #F6F6E1, #D8CD53);
     background: -o-linear-gradient(top, #F6F6E1, #D8CD53);
@@ -144,6 +153,8 @@ table {
     background: linear-gradient(top, #F6F6E1, #D8CD53);
     border: none;
     border-radius: calc(var(--grand-width)/16);
+    display: block;
+    margin: 0 auto;
 }
 
 .grey-button {
