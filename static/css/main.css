@@ -45,6 +45,11 @@ body {
     border-radius: calc(var(--grand-width)/24);;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 input[type=text],
 input[type=email] {
     width: 125px;
@@ -151,13 +156,14 @@ table {
     margin: 0 auto;
     border-radius: 25px;
     background-position: top 40px left 0px;
-    background-color: white;
     background-image: url("../images/pp.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .donation-button {
+    font-weight: 720;
+    font-size: 20px;
     height: calc(var(--grand-width)/12);
     width: calc(var(--grand-width)/4);
     background: -webkit-linear-gradient(top, #F6F6E1, #D8CD53);
