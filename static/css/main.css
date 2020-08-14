@@ -98,13 +98,14 @@ input[type=email]:-ms-input-placeholder {
     background: rgba(216,214,68,1);
 }
 
+.content {
+    width: var(--grand-width);
+    margin: 0 auto;
+}
 table {
     width: var(--grand-width);
     border-spacing: 0px 0px;
-    margin: 0 auto;
 }
-
-
 
 .css-s1 tr:nth-child(4n+2) {
     background: #ddd;
