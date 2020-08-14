@@ -35,14 +35,14 @@ body {
     background-align: center;
     background-image: url("https://images.wallpaperscraft.com/image/northern_lights_aurora_starry_sky_134859_3840x2160.jpg");
     background-size: 100%;
-    border-radius: 25px;
+    border-radius: calc(var(--grand-width)/24);;
 }
 
 .cover-pattern {
     width: var(--grand-width);
     height: calc(var(--grand-width)/16*9);
     background: rgba(40,40,90,0.35);
-    border-radius: 25px;
+    border-radius: calc(var(--grand-width)/24);;
 }
 
 input[type=text],
@@ -126,7 +126,7 @@ table {
     background-image: url('../images/obraz.png');
     background-align: center;
     background-size: 100% 100%;
-    border-radius: 25px;
+    border-radius: calc(var(--grand-width)/24);;
 }
 
 .donation-pattern {
@@ -135,12 +135,26 @@ table {
     height: calc(var(--grand-width)/4);
     background: rgba(200,200,255,0.35);
     background-align: center;
-    border-radius: 25px;
+    border-radius: calc(var(--grand-width)/24);;
     color: white;
 }
 
 .donation-pattern p {
     text-align: center;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.papayl {
+    width: calc(var(--grand-width)/4);
+    height: calc(var(--grand-width)/4 - 24px);
+    margin: 0 auto;
+    border-radius: 25px;
+    background-position: top 40px left 0px;
+    background-color: white;
+    background-image: url("../images/pp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .donation-button {
@@ -152,7 +166,7 @@ table {
     background: -ms-linear-gradient(top, #F6F6E1, #D8CD53);
     background: linear-gradient(top, #F6F6E1, #D8CD53);
     border: none;
-    border-radius: calc(var(--grand-width)/16);
+    border-radius: calc(var(--grand-width)/24);
     display: block;
     margin: 0 auto;
 }
