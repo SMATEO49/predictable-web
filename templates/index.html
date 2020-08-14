@@ -14,7 +14,7 @@
             <p>Enroll for a newsletter</p>
             <p>Stay aware of crucial moments</p>
 
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="Your email address" />
             <button onclick="secondStep('email', 'first-step')" class="enroll">
                 Enroll
             </button>
@@ -28,7 +28,7 @@
             </button>
             <p>Confirm your e-mail</p>
 
-            <input type="text" name="code" id="code" />
+            <input type="text" name="code" id="code" placeholder="6-digit code"/>
             <button onclick="thirdStep('email', 'code', 'second-step')" class="enroll">
                 Confirm
             </button>
@@ -53,7 +53,7 @@
         <input type="radio" id="percent" name="table-radio" value="percent" onclick="getRadioValue()" />
         <label for="change">Change (in percent)</label>
 
-        <table class="table css-s1" id="table">
+        <table class="table css-s1" id="table" >
 
             <tr>
                 <td></td>
@@ -97,7 +97,7 @@
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick" />
             <input type="hidden" name="hosted_button_id" value="LKHCTDTSEKK7E" />
-            <input type="submit" name="submit" value="Donate" />
+            <input type="submit" name="submit" value="Donate" class="donation-button"/>
         </form>
         </div>
     </div>

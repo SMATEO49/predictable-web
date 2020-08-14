@@ -3,6 +3,10 @@
     src: url('../fonts/century-gothic.ttf');
 }
 
+:root {
+  --placeholder-color: #373737;
+}
+
 #second-step {
     display: none;
 }
@@ -36,6 +40,7 @@ body {
     border-radius: 25px;
 }
 
+input[type=text],
 input[type=email] {
     width: 125px;
     height: 24px;
@@ -51,20 +56,36 @@ input[type=email] {
 
 }
 
+input[type=text]::placeholder {
+    color: var(--placeholder-color);
+}
+
 input[type=email]::placeholder {
-    color: black;
+    color: var(--placeholder-color);
+}
+
+input[type=text]:-webkit-input-placeholder {
+    color: var(--placeholder-color);
 }
 
 input[type=email]:-webkit-input-placeholder {
-    color: black;
+    color: var(--placeholder-color);
+}
+
+input[type=text]:-moz-placeholder {
+    color: var(--placeholder-color);
 }
 
 input[type=email]:-moz-placeholder {
-    color: black;
+    color: var(--placeholder-color);
+}
+
+input[type=text]:-ms-input-placeholder {
+    color: var(--placeholder-color);
 }
 
 input[type=email]:-ms-input-placeholder {
-    color: black;
+    color: var(--placeholder-color);
 }
 
 .enroll {
@@ -76,13 +97,17 @@ input[type=email]:-ms-input-placeholder {
     background: rgba(216,214,68,1);
 }
 
+table {
+    margin: 0 auto;
+}
+
 .css-s1 tr:nth-child(4n+2) {
     background: #ddd;
 }
 
 .donation {
     margin: 0 auto;
-    height:120px;
+    height: 120px;
     width: 480px;
     background-image: url('../images/obraz.png');
     background-align: center;
@@ -97,6 +122,18 @@ input[type=email]:-ms-input-placeholder {
     background: rgba(200,200,255,0.35);
     background-align: center;
     border-radius: 25px;
+}
+
+.donation-button {
+    height: 60px;
+    width: 180px;
+    background: -webkit-linear-gradient(top, #F6F6E1, #D8CD53);
+    background: -moz-linear-gradient(top, #F6F6E1, #D8CD53);
+    background: -o-linear-gradient(top, #F6F6E1, #D8CD53);
+    background: -ms-linear-gradient(top, #F6F6E1, #D8CD53);
+    background: linear-gradient(top, #F6F6E1, #D8CD53);
+    border: none;
+    border-radius: 30px;
 }
 
 .footer {
